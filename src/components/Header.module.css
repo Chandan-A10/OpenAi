@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.container {
+  background-color: black;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.navbar {
+  padding: 1%;
+  width:49%;
+  height: 38px;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  margin-top: 0%;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+li {
+  margin-left: 1rem;
+  margin-top: 0.25rem;
+  list-style-type: none;
+  text-decoration: none;
+  color: aliceblue;
+  display: flex;
+}
+.first {
+  margin-left: 6rem;
+  margin-left: 0 !important;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  display: inline-block;
+  position: relative;
+}
+
+.navlinks {
+  letter-spacing: -0.01rem;
+  font-size: 1.3rem;
+  padding-bottom: 6px;
+  font-family: "Roboto", sans-serif;    
+}
+li{
+    margin-right: 10px;
+}
+
+.navlinks:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+  cursor: pointer;
+}
+
+.rcontainer {
+  padding: 1%;
+  width: 37.5%;
+  height: 38px;
+  display: flex;
+  justify-content: flex-end;
+}
+.signup{
+    padding: 3px 10px 2px;
+    border: 2px solid white;
+    margin-right: 20px;
+}
+
+.signup:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.signup:hover span{
+    text-decoration: none;
+    color: black;
+}
+.signup:hover svg{
+    fill: black;
+}
+.rnav{
+    margin-top: -6px;
+}
+.menu{
+    display: none;
+    color: white;
+    padding: 5px;
+    margin-right: 20px;
+    border: 2px solid white;
+}
+.menu:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+    color: black;
+}
+/* .menuItems{
+    background-color: black;
+    bottom: 0;
+    min-width: 50vw;    
+    position: fixed;
+    min-height: 91vh;
+    width: 50%;
+} */
+@media only screen and (max-width: 1439px) {
+    .navbar ul li{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .rcontainer ul li{
+        display: none;
+    }
+}
+@media (min-width: 1440px) and (max-width:1919px) {
+    .navbar{
+        width: 64%;
+    }
+}

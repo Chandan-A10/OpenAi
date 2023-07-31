@@ -1,0 +1,254 @@
+.container {
+  margin-top: 80px;
+  min-height: 60vh;
+  display: flex;
+  align-items: end;
+}
+.subcontainer {
+  margin-left: 16.9%;
+  color: white;
+}
+.subcontainer h1 {
+  font-weight: 300;
+  line-height: 80px;
+  color: white;
+  font-size: 5.25rem;
+  font-family: "Helvetica Neue", "Arial", "Noto Sans", "sans-serif";
+}
+
+.span {
+  letter-spacing: 0.01rem;
+  font-size: 1.3rem;
+  padding-bottom: 6px;
+  font-family: "Roboto", sans-serif;
+}
+.button {
+  background: transparent;
+  border: none;
+}
+.btns {
+  display: flex;
+}
+.lbtn {
+  display: flex;
+  padding: 6px 10px 1px;
+  border: 2px solid white;
+  margin-right: 20px;
+}
+.rbtn {
+  display: flex;
+  align-items: center;
+}
+.lbtn:hover {
+  cursor: pointer;
+}
+.rbtn:hover span {
+    text-decoration: none !important;
+  cursor: pointer;
+}
+.vid {
+  padding: 9%;
+  min-height: 80vh;
+  display: flex;
+}
+.vide {
+  margin-left: 6%;
+  width: 100%;
+}
+.subheading {
+  color: aliceblue;
+  width: 100%;
+}
+.stroke {
+  padding-left: 30px;
+  padding-right: 90px;
+}
+.stroke h1 {
+  color: white;
+  font-family: "Signifier", ui-serif, Georgia, Cambria, Times New Roman, Times,
+    serif;
+  font-weight: 200;
+  font-size: 3.5rem;
+}
+.list {
+  font-size: 1.3rem;
+  margin-left: -1%;
+}
+.card {
+  margin-top: 8%;
+}
+
+.firstele {
+  margin-left: 0;
+  padding-left: 0%;
+}
+.fcont {
+  display: flex;
+  color: aliceblue;
+  padding: 17px;
+}
+.lt {
+  width: 25%;
+  font-size: 1.3rem;
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+}
+.rtt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 20px;
+}
+.topbox {
+  padding: 10px 15px 10px;
+  border: 1px solid rgb(156, 153, 153);
+  font-size: 1.3rem;
+  width: 60%;
+}
+.typewriter::before {
+  background-color: yellow;
+}
+.typewriter {
+  background-color: #323332;
+}
+.spant {
+  border-right: 10px solid;
+  white-space: pre-wrap;
+  animation: cursor 0.6s ease-in-out infinite alternate;
+}
+@keyframes cursor {
+  0% {
+    border-right-color: initial;
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+  .lt {
+    width: 40%;
+  }
+}
+@media (min-width: 391px) and (max-width: 768px) {
+  .subcontainer h1 {
+    font-size: 3rem;
+    letter-spacing: -0.1rem;
+  }
+  .vid {
+    padding: 0;
+    margin: 0;
+  }
+  .subcontainer {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .vide {
+    height: 400px;
+    margin-left: 0;
+  }
+  .vid {
+    min-height: 40vh;
+  }
+  .container {
+    align-items: flex-start;
+    min-height: 50vh;
+  }
+  .stroke {
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+  .stroke h1 {
+    font-size: 3rem;
+  }
+  .fcont {
+    justify-content: space-between;
+  }
+  .lt {
+    width: auto;
+  }
+  .rtt {
+    min-width: 50%;
+  }
+  .topbox {
+    width: 100%;
+    padding: 0%;
+  }
+  .input {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .typewriter {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 40vh;
+  }
+  .subcontainer {
+    margin-left: 4%;
+  }
+  .subcontainer h1 {
+    font-size: 2rem;
+    line-height: 50px;
+  }
+  .span {
+    padding: 0%;
+    font-size: 0.9rem;
+  }
+  .vid {
+    margin: 0;
+    min-height: 30vh;
+    padding: 0;
+  }
+  .lbtn {
+    padding: 10px 5px 1px;
+  }
+  
+  .vide {
+    width: 100%;
+    margin-left: 0;
+  }
+  .stroke {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .stroke h1 {
+    font-size: 2rem;
+  }
+  .list {
+    font-size: 0.9rem;
+  }
+  .fcont {
+    flex-direction: column;
+  }
+  .lt {
+    width: 100%;
+    padding: 5px;
+  }
+  .rtt {
+    margin-left: 22px;
+    padding-right: 0;
+    padding: 20px;
+    margin: 0;
+  }
+  .topbox {
+    padding: 0;
+    margin: 0%;
+    width: 100%;
+  }
+  .input {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .typewriter {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
